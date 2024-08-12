@@ -61,7 +61,7 @@ This **Bitcoin Price Alert System** monitors the price of Bitcoin and sends an e
 
 ## How It Works
 
-1. **Create Gmail API Service:**
+1. **Creates Gmail API Service:**
 
     ```python
     def create_service():
@@ -70,7 +70,7 @@ This **Bitcoin Price Alert System** monitors the price of Bitcoin and sends an e
 
     This function handles authentication and creates a service object to interact with the Gmail API.
 
-2. **Fetch Bitcoin Price:**
+2. **Fetch Bitcoin Price from mempool API:**
 
     ```python
     def fetch_bitcoin_price():
@@ -79,7 +79,7 @@ This **Bitcoin Price Alert System** monitors the price of Bitcoin and sends an e
 
     Fetches the current Bitcoin price from the Mempool API.
 
-3. **Check Alerts:**
+3. **Check if the alers needs to be sent or not:**
 
     ```python
     def check_alert(price, alert_levels):
@@ -115,9 +115,6 @@ This **Bitcoin Price Alert System** monitors the price of Bitcoin and sends an e
 
     Sets up alerts and schedules the job to run every 10 minutes.
 
-## Contributing
-
-Feel free to open issues or submit pull requests. Contributions are welcome!
 
 ## License
 
