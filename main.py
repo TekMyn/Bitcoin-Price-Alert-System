@@ -138,7 +138,7 @@ def setup_alerts():
         except ValueError:
             print('Invalid price level. Please enter a numeric value.')
 
-    email = input('Enter your email address for alerts: ')
+    email = input('Enter your email address, where you will receive the alerts: ')
     return alert_levels, email
 
 def main():
